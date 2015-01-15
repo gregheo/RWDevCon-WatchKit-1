@@ -5,12 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
     </dependencies>
     <scenes>
-        <!--Schedule Controller-->
+        <!--Schedule Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="ScheduleController" customModule="RWDevCon_WatchKit_Extension"/>
+                <controller id="AgC-eL-Hgc" customClass="ScheduleInterfaceController" customModule="RWDevCon_WatchKit_Extension"/>
             </objects>
-            <point key="canvasLocation" x="164" y="217"/>
         </scene>
     </scenes>
 </document>

@@ -1,5 +1,7 @@
-
+import Foundation
 import UIKit
+
+let MyScheduleSomethingChangedNotification = "com.razeware.rwdevcon.notifications.myScheduleChanged"
 
 class SessionViewController: UITableViewController {
   var coreDataStack: CoreDataStack!
@@ -14,12 +16,21 @@ class SessionViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    assert(session != nil, "Session view controller needs a session!")
-
-    title = session.title
+    title = session?.title
 
     tableView.rowHeight = UITableViewAutomaticDimension
     tableView.estimatedRowHeight = 76
+
+    navigationController?.navigationBar.barStyle = UIBarStyle.Default
+    navigationController?.navigationBar.setBackgroundImage(UIImage(named: "pattern-64tall"), forBarMetrics: UIBarMetrics.Default)
+    navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+    navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "AvenirNext-Regular", size: 17)!, NSForegroundColorAttributeName: UIColor.whiteColor()]
+  }
+
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+
+    navigationController?.setNavigationBarHidden(false, animated: animated)
   }
 
   override func didReceiveMemoryWarning() {
@@ -30,7 +41,11 @@ class SessionViewController: UITableViewController {
   // MARK: - Table view data source
 
   override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return 3
+    if session == nil {
+      return 0
+    } else {
+      return 3
+    }
   }
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -68,7 +83,7 @@ class SessionViewController: UITableViewController {
     if indexPath.section == Sections.info && indexPath.row == 3 {
       let cell = tableView.dequeueReusableCellWithIdentifier("detailButton", forIndexPath: indexPath) as DetailTableViewCell
 
-      cell.keyLabel.text = "My Schedule"
+      cell.keyLabel.text = "My Schedule".uppercaseString
       if session.isFavorite {
         cell.valueButton.setTitle("Remove from My Schedule", forState: .Normal)
       } else {
@@ -77,17 +92,22 @@ class SessionViewController: UITableViewController {
       cell.valueButton.addTarget(self, action: "myScheduleButton:", forControlEvents: .TouchUpInside)
 
       return cell
+    } else if indexPath.section == Sections.info && indexPath.row == 2 {
+      let cell = tableView.dequeueReusableCellWithIdentifier("detailButton", forIndexPath: indexPath) as DetailTableViewCell
+
+      cell.keyLabel.text = "Where".uppercaseString
+      cell.valueButton.setTitle(session.room.name, forState: .Normal)
+      cell.valueButton.addTarget(self, action: "roomDetails:", forControlEvents: .TouchUpInside)
+
+      return cell
     } else if indexPath.section == Sections.info {
       let cell = tableView.dequeueReusableCellWithIdentifier("detail", forIndexPath: indexPath) as DetailTableViewCell
 
       if indexPath.row == 0 {
-        cell.keyLabel.text = "Track"
+        cell.keyLabel.text = "Track".uppercaseString
         cell.valueLabel.text = session.track.name
       } else if indexPath.row == 1 {
-        cell.keyLabel.text = "Where"
-        cell.valueLabel.text = session.room.name
-      } else if indexPath.row == 2 {
-        cell.keyLabel.text = "When"
+        cell.keyLabel.text = "When".uppercaseString
         cell.valueLabel.text = session.startDateTimeString
       }
 
@@ -123,14 +143,22 @@ class SessionViewController: UITableViewController {
     }
   }
 
+  func roomDetails(sender: UIButton) {
+    if let roomVC = storyboard?.instantiateViewControllerWithIdentifier("RoomViewController") as? RoomViewController {
+      roomVC.room = session.room
+      roomVC.title = session.room.name
+      navigationController?.pushViewController(roomVC, animated: true)
+    }
+  }
+
   func myScheduleButton(sender: UIButton) {
     session.isFavorite = !session.isFavorite
 
     tableView.reloadSections(NSIndexSet(index: Sections.info), withRowAnimation: .Automatic)
+    NSNotificationCenter.defaultCenter().postNotificationName(MyScheduleSomethingChangedNotification, object: self, userInfo: ["session": session])
   }
 
   func twitterButton(sender: UIButton) {
     UIApplication.sharedApplication().openURL(NSURL(string: "http://twitter.com/\(sender.titleForState(.Normal)!)")!)
   }
-
 }
