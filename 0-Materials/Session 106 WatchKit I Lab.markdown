@@ -4,7 +4,7 @@ In this lab session, you're going to expand on the existing detail display when 
 
 ## Getting started
 
-Open **InterfaceController.swift** and look at your current implementation of `table(_:didSelectRowAtIndex:)`. You're calling `presentControllerWithName()` to show another interface modally, but presenting a *page-based interface* modally is almost as easy!
+Open **ScheduleInterfaceController.swift** and look at your current implementation of `table(_:didSelectRowAtIndex:)`. You're calling `presentControllerWithName()` to show another interface modally, but presenting a *page-based interface* modally is almost as easy!
 
 To start, replace the call to `presentControllerWithName()` with the following:
 
@@ -47,7 +47,7 @@ presentControllerWithNames(controllerNames, contexts: [session] + presenters)
 
 You're using a special array constructor to create an array with the string "DetailInterfaceController" repeated. Repeated how many times? The number of presenters plus one – that will cover one page for each presenter (if any) and one page for the session details.
 
-Next, you just call `presentControllerWithNames(_:contexts:) with the controller names in the array. For the contexts, you just combine the session details with each presenter details. Each page gets its own context information.
+Next, you just call `presentControllerWithNames(_:contexts:)` with the controller names in the array. For the contexts, you just combine the session details with each presenter details. Each page gets its own context information.
 
 Build and run the WatchKit app again, and select the registration session. It should have just one page:
 
@@ -92,7 +92,7 @@ Or, if you want *one more thing* to look at here – how about using the naviga
 
 If you're coming from iOS, you know about `pushViewController` and `UINavigationController` vs `presentViewController`. WatchKit has something similar – you've been using modal presentation so far, since that's the one that works with multiple pages.
 
-Open **InterfaceController.swift** and find `table(_:didSelectRowAtIndex:)`. Comment out the call to `presentControllerWithNames` and replace it with the following:
+Open **ScheduleInterfaceController.swift** and find `table(_:didSelectRowAtIndex:)`. Comment out the call to `presentControllerWithNames` and replace it with the following:
 
 ```swift
 pushControllerWithName("DetailInterfaceController", context: session)

@@ -6,13 +6,13 @@ Right now, the table rows are a little bare with just the session time and title
 
 ![The current project. Wall of text!](./assets/challenge-starter.png)
 
-Your challenge is to update the table row interface to include an icon for the track. You'll find images called Beginner, Intermediate, and Advanced already in the asset catalog and you can access a session's track with the `session.track.name` property.
+Your challenge is to update the table row interface to include an icon for the track. You'll find images called Beginner, Intermediate, and Advanced already in the **people.xcassets** asset catalog (in the RWDevCon group) and you can access a session's track with the `session.track.name` property.
 
 The goal is to have the table row look like this:
 
 ![Table with icons in the rows](./assets/challenge-table-icons.png)
 
-Feel free to dive right into the challenge! If you need some hints along the way, keep reading.
+[Jump ahead to the hints](#hint-1-interface) if you need some help along the way.
 
 ## Bonus: Session details image
 If you're a smartypants and need an extra task, how about getting the image to show up on the session details page too?
@@ -43,7 +43,7 @@ Also, you should set the inner group's sizing mode to **Size to Fit Content** fo
 
 You'll want to set an image to the table row image from code, which means: outlet!
 
-Open the assistant editor and make sure ScheduleRow.swift is showing. Control-drag from the image to the class. You might find it easier to control-drag from the document outline rather than directly from the interface.
+Open the assistant editor and make sure **ScheduleRow.swift** is showing. Control-drag from the image to the class. You might find it easier to control-drag from the document outline rather than directly from the interface.
 
 ## Hint 4: Table row code
 
