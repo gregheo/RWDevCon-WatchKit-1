@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+    </dependencies>
+    <scenes>
+        <!--Schedule Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="ScheduleInterfaceController" customModule="RWDevCon_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="E8f-AH-46C">
+                            <items>
+                                <imageView width="30" height="30" alignment="center" image="RW_logo" id="dQb-OE-Wf9"/>
+                                <label alignment="center" verticalAlignment="center" text="RWDevCon" id="6XL-hM-uhP"/>
+                            </items>
+                        </group>
+                        <table alignment="left" id="ALI-4g-e4h">
+                            <items>
+                                <tableRow identifier="ScheduleRow" id="X8B-GH-hLP" customClass="ScheduleRow" customModule="RWDevCon_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="rpa-Ds-QXT">
+                                        <items>
+                                            <label alignment="left" text="Date and time" id="VBH-TO-OBW">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                            <label alignment="left" text="Session title" numberOfLines="0" id="OsX-EL-ude">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="timeLabel" destination="VBH-TO-OBW" id="nPM-od-LRy"/>
+                                        <outlet property="titleLabel" destination="OsX-EL-ude" id="3Zb-AA-hIS"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="ALI-4g-e4h" id="4De-Qk-Ncg"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--DetailInterfaceController-->
+        <scene sceneID="ocD-Ao-uNF">
+            <objects>
+                <controller identifier="DetailInterfaceController" id="sP7-UD-xJ2" customClass="DetailInterfaceController" customModule="RWDevCon_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Title" numberOfLines="0" id="gbg-mj-Scq"/>
+                        <separator alignment="left" id="pAl-5W-4VA"/>
+                        <imageView width="44" height="44" alignment="center" id="h6j-0j-dm5"/>
+                        <label alignment="left" text="Details" numberOfLines="0" id="n8p-Rb-qig"/>
+                    </items>
+                    <connections>
+                        <outlet property="detailsLabel" destination="n8p-Rb-qig" id="C83-c4-LtP"/>
+                        <outlet property="image" destination="h6j-0j-dm5" id="r4O-zm-s86"/>
+                        <outlet property="titleLabel" destination="gbg-mj-Scq" id="ITc-3u-ij7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="398" y="392"/>
+        </scene>
+    </scenes>
+</document>
