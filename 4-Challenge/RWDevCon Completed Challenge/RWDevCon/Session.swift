@@ -22,12 +22,16 @@ class Session: NSManagedObject {
     return (sessionNumber != "" ? "\(sessionNumber): " : "") + title
   }
 
-  var startDateTimeString: String {
-    return formatDate("EEEE h:mm a")
+  var startDateDayOfWeek: String {
+    return formatDate("EEEE")
   }
 
   var startDateTimeShortString: String {
     return formatDate("EEE h:mm a")
+  }
+
+  var startDateTimeString: String {
+    return formatDate("EEEE h:mm a")
   }
 
   var startTimeString: String {
@@ -53,6 +57,12 @@ class Session: NSManagedObject {
     formatter.timeZone = NSTimeZone(name: "US/Eastern")!
 
     return formatter.stringFromDate(date)
+  }
+
+  class func sessionCount(context: NSManagedObjectContext) -> Int {
+    let fetch = NSFetchRequest(entityName: "Session")
+    fetch.includesSubentities = false
+    return context.countForFetchRequest(fetch, error: nil)
   }
 
   class func sessionByIdentifier(identifier: String, context: NSManagedObjectContext) -> Session? {
@@ -93,4 +103,5 @@ class Session: NSManagedObject {
     let predicate = NSPredicate(format: "active = %@ AND track.trackId = %@", argumentArray: [true, trackId])
     return sessionsForPredicate(predicate, context: context)
   }
+
 }

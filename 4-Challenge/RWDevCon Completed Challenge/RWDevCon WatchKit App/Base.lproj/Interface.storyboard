@@ -5,70 +5,68 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
     </dependencies>
     <scenes>
-        <!--Schedule Controller-->
+        <!--Schedule Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="ScheduleController" customModule="RWDevCon_WatchKit_Extension">
+                <controller id="AgC-eL-Hgc" customClass="ScheduleInterfaceController" customModule="RWDevCon_WatchKit_Extension">
                     <items>
-                        <group width="1" alignment="left" id="hTK-YE-vWN">
+                        <group width="1" alignment="left" id="E8f-AH-46C">
                             <items>
-                                <imageView width="30" height="30" alignment="left" image="RW_logo" contentMode="scaleAspectFit" id="3X0-GB-Kn5"/>
-                                <label alignment="left" verticalAlignment="center" text="RWDevCon" id="beQ-qw-zi2"/>
+                                <imageView width="30" height="30" alignment="center" image="RW_logo" id="dQb-OE-Wf9"/>
+                                <label alignment="center" verticalAlignment="center" text="RWDevCon" id="6XL-hM-uhP"/>
                             </items>
                         </group>
-                        <separator alignment="left" id="6F6-30-qxN"/>
-                        <table alignment="left" id="W2b-Nc-3nT">
+                        <table alignment="left" id="ALI-4g-e4h">
                             <items>
-                                <tableRow identifier="ScheduleRow" id="IcH-Ws-MlT" customClass="ScheduleRow" customModule="RWDevCon_WatchKit_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="5tY-G7-OBn">
+                                <tableRow identifier="ScheduleRow" id="X8B-GH-hLP" customClass="ScheduleRow" customModule="RWDevCon_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="rpa-Ds-QXT">
                                         <items>
-                                            <group width="1" alignment="left" id="0D0-yj-k8t">
+                                            <imageView width="30" height="30" alignment="left" id="cng-vS-obc"/>
+                                            <group alignment="left" layout="vertical" id="ySa-sE-MVg">
                                                 <items>
-                                                    <imageView width="30" height="30" alignment="left" contentMode="scaleAspectFit" id="EZH-YJ-d2E"/>
-                                                    <label alignment="left" verticalAlignment="center" text="Label" id="Xex-W5-8Jj">
-                                                        <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                                    <label alignment="left" text="Date and time" id="VBH-TO-OBW">
+                                                        <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                    </label>
+                                                    <label alignment="left" text="Session title" numberOfLines="0" id="OsX-EL-ude">
+                                                        <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                                     </label>
                                                 </items>
                                             </group>
-                                            <label alignment="left" text="Label" numberOfLines="3" id="X8A-Dl-dHL"/>
                                         </items>
                                     </group>
                                     <connections>
-                                        <outlet property="dateLabel" destination="Xex-W5-8Jj" id="hPt-Ua-dnn"/>
-                                        <outlet property="image" destination="EZH-YJ-d2E" id="GS9-rv-hpH"/>
-                                        <outlet property="rowLabel" destination="X8A-Dl-dHL" id="ved-5l-fJb"/>
+                                        <outlet property="image" destination="cng-vS-obc" id="Dp6-66-rDf"/>
+                                        <outlet property="timeLabel" destination="VBH-TO-OBW" id="nPM-od-LRy"/>
+                                        <outlet property="titleLabel" destination="OsX-EL-ude" id="3Zb-AA-hIS"/>
                                     </connections>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                     <connections>
-                        <outlet property="scheduleTable" destination="W2b-Nc-3nT" id="pEJ-4g-3ur"/>
+                        <outlet property="table" destination="ALI-4g-e4h" id="4De-Qk-Ncg"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="164" y="217"/>
         </scene>
-        <!--DetailsController-->
-        <scene sceneID="PmW-tg-brj">
+        <!--DetailInterfaceController-->
+        <scene sceneID="ocD-Ao-uNF">
             <objects>
-                <controller identifier="DetailsController" id="CN0-Tj-Ig7" customClass="DetailsController" customModule="RWDevCon_WatchKit_Extension">
+                <controller identifier="DetailInterfaceController" id="sP7-UD-xJ2" customClass="DetailInterfaceController" customModule="RWDevCon_WatchKit_Extension">
                     <items>
-                        <label alignment="center" text="Title" numberOfLines="3" id="IZV-2I-Bif">
-                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
-                        </label>
-                        <separator alignment="left" id="gwj-RL-8Ed"/>
-                        <imageView width="40" height="40" alignment="center" contentMode="scaleAspectFit" id="8VG-FR-aLH"/>
-                        <label alignment="left" text="Label" numberOfLines="0" id="hjU-6r-t3s"/>
+                        <label alignment="center" text="Title" numberOfLines="0" id="gbg-mj-Scq"/>
+                        <separator alignment="left" id="pAl-5W-4VA"/>
+                        <imageView width="44" height="44" alignment="center" id="h6j-0j-dm5"/>
+                        <label alignment="left" text="Details" numberOfLines="0" id="n8p-Rb-qig"/>
                     </items>
                     <connections>
-                        <outlet property="detailsLabel" destination="hjU-6r-t3s" id="GNA-76-VMm"/>
-                        <outlet property="image" destination="8VG-FR-aLH" id="KRY-mI-9yk"/>
-                        <outlet property="titleLabel" destination="IZV-2I-Bif" id="upd-Ry-Aka"/>
+                        <outlet property="detailsLabel" destination="n8p-Rb-qig" id="C83-c4-LtP"/>
+                        <outlet property="image" destination="h6j-0j-dm5" id="r4O-zm-s86"/>
+                        <outlet property="titleLabel" destination="gbg-mj-Scq" id="ITc-3u-ij7"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="397" y="217"/>
+            <point key="canvasLocation" x="574" y="392"/>
         </scene>
     </scenes>
 </document>

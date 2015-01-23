@@ -1,4 +1,4 @@
-
+import Foundation
 import UIKit
 import CoreData
 
@@ -8,12 +8,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   lazy var coreDataStack = CoreDataStack()
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    if let conferencePlist = NSBundle.mainBundle().URLForResource("RWDevCon2015", withExtension: "plist") {
-      Config.loadDataFromPlist(conferencePlist, context: coreDataStack.context)
-      coreDataStack.saveContext()
-    }
 
-    ((window?.rootViewController as UINavigationController).topViewController as StickyHeadersViewController).coreDataStack = coreDataStack
+    // global style
+    application.statusBarStyle = UIStatusBarStyle.LightContent
+    UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "AvenirNext-Regular", size: 17)!, NSForegroundColorAttributeName: UIColor.whiteColor()], forState: .Normal)
+    
+    let splitViewController = self.window!.rootViewController as UISplitViewController
+    splitViewController.delegate = self
+
+    let navigationController = splitViewController.viewControllers[0] as UINavigationController
+    (navigationController.topViewController as ScheduleViewController).coreDataStack = coreDataStack
+
+    let detailWrapperController = splitViewController.viewControllers[1] as UINavigationController
+    (detailWrapperController.topViewController as SessionViewController).coreDataStack = coreDataStack
+
     return true
   }
 
@@ -43,3 +51,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: UISplitViewControllerDelegate {
+  func splitViewController(splitViewController: UISplitViewController, collapseSecondaryViewController secondaryViewController:UIViewController!, ontoPrimaryViewController primaryViewController:UIViewController!) -> Bool {
+    if let secondaryAsNavController = secondaryViewController as? UINavigationController {
+      if let topAsDetailController = secondaryAsNavController.topViewController as? SessionViewController {
+        if topAsDetailController.session == nil {
+          // Return true to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
+          return true
+        }
+      }
+    }
+    return false
+  }
+
+}
