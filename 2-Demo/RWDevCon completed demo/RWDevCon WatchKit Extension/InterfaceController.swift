@@ -1,12 +1,19 @@
+//
+//  InterfaceController.swift
+//  RWDevCon WatchKit Extension
+//
+//  Copyright (c) 2015 Razeware LLC. All rights reserved.
+//
+
 import WatchKit
 import Foundation
 
-class ScheduleInterfaceController: WKInterfaceController {
+class InterfaceController: WKInterfaceController {
+  @IBOutlet weak var scheduleTable: WKInterfaceTable!
+
   lazy var coreDataStack = CoreDataStack()
   var sessions = [Session]()
 
-  @IBOutlet weak var table: WKInterfaceTable!
-  
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
 
@@ -16,10 +23,10 @@ class ScheduleInterfaceController: WKInterfaceController {
   func showAllSessions() {
     sessions = Session.allSessionsInContext(coreDataStack.context)
 
-    table.setNumberOfRows(sessions.count, withRowType: "ScheduleRow")
+    scheduleTable.setNumberOfRows(sessions.count, withRowType: "ScheduleRow")
 
     for (index, session) in enumerate(sessions) {
-      if let row = table.rowControllerAtIndex(index) as? ScheduleRow {
+      if let row = scheduleTable.rowControllerAtIndex(index) as? ScheduleRow {
         row.timeLabel.setText(session.startDateTimeShortString)
         row.titleLabel.setText(session.title)
       }
