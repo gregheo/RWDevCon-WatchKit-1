@@ -10,7 +10,6 @@
 		78048CBB1A66E04A00435241 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78048CBA1A66E04A00435241 /* RoomViewController.swift */; };
 		783A17D61A6540B600EE7E88 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A17D51A6540B600EE7E88 /* ScheduleViewController.swift */; };
 		7848A62C1A41F776003F8373 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7848A62B1A41F776003F8373 /* Config.swift */; };
-		78632F911A67EA7C001958A5 /* RWDevCon2015.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78B7AA241A413573002AAF7F /* RWDevCon2015.plist */; };
 		78B7A9D41A3E9876002AAF7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B7A9D31A3E9876002AAF7F /* AppDelegate.swift */; };
 		78B7A9D71A3E9876002AAF7F /* RWDevCon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78B7A9D51A3E9876002AAF7F /* RWDevCon.xcdatamodeld */; };
 		78B7A9DC1A3E9876002AAF7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B7A9DA1A3E9876002AAF7F /* Main.storyboard */; };
@@ -25,58 +24,12 @@
 		78B7AA341A415877002AAF7F /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B7AA331A415877002AAF7F /* SessionViewController.swift */; };
 		78B7AA361A415C96002AAF7F /* PresenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B7AA351A415C96002AAF7F /* PresenterTableViewCell.swift */; };
 		78B978EF1A6737F1009DFB8B /* people.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B978EE1A6737F1009DFB8B /* people.xcassets */; };
-		78B978F91A67386A009DFB8B /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B978F81A67386A009DFB8B /* ScheduleInterfaceController.swift */; };
-		78B978FB1A67386A009DFB8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B978FA1A67386A009DFB8B /* Images.xcassets */; };
-		78B978FF1A67386A009DFB8B /* RWDevCon WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 78B978FE1A67386A009DFB8B /* RWDevCon WatchKit App.app */; };
-		78B979071A67386A009DFB8B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78B979051A67386A009DFB8B /* Interface.storyboard */; };
-		78B979091A67386A009DFB8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B979081A67386A009DFB8B /* Images.xcassets */; };
-		78B9790C1A67386A009DFB8B /* RWDevCon WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 78B978F41A67386A009DFB8B /* RWDevCon WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		78B979131A673A12009DFB8B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7848A62B1A41F776003F8373 /* Config.swift */; };
-		78B979141A673A1A009DFB8B /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B7AA261A4147DC002AAF7F /* CoreDataStack.swift */; };
-		78B979151A673A1A009DFB8B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B7AA2E1A414E58002AAF7F /* Person.swift */; };
-		78B979161A673A1A009DFB8B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B7AA2C1A414E57002AAF7F /* Session.swift */; };
-		78B979171A673A1A009DFB8B /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B7AA2A1A414A94002AAF7F /* Room.swift */; };
-		78B979181A673A1A009DFB8B /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B7AA281A414A94002AAF7F /* Track.swift */; };
-		78B979191A673A20009DFB8B /* RWDevCon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78B7A9D51A3E9876002AAF7F /* RWDevCon.xcdatamodeld */; };
-		78B9791A1A673A24009DFB8B /* people.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B978EE1A6737F1009DFB8B /* people.xcassets */; };
-		78B9791B1A673A24009DFB8B /* people.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78B978EE1A6737F1009DFB8B /* people.xcassets */; };
 		78CBC28B1A6537F200FC839A /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CBC28A1A6537F200FC839A /* ScheduleTableViewController.swift */; };
 		78CBC28D1A653A3F00FC839A /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CBC28C1A653A3F00FC839A /* ScheduleTableViewCell.swift */; };
 		78F256781A4162DA0040AC63 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F256771A4162DA0040AC63 /* DetailTableViewCell.swift */; };
 		78F2567A1A4167F40040AC63 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F256791A4167F40040AC63 /* LabelTableViewCell.swift */; };
 		78F256841A416BB20040AC63 /* ScheduleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F256801A416BB20040AC63 /* ScheduleDataSource.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		78B979001A67386A009DFB8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78B7A9C61A3E9876002AAF7F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78B978FD1A67386A009DFB8B;
-			remoteInfo = "RWDevCon WatchKit App";
-		};
-		78B9790A1A67386A009DFB8B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78B7A9C61A3E9876002AAF7F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78B978F31A67386A009DFB8B;
-			remoteInfo = "RWDevCon WatchKit Extension";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		783F5A261A490E1B00199736 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				78B9790C1A67386A009DFB8B /* RWDevCon WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		78048CBA1A66E04A00435241 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
@@ -99,14 +52,6 @@
 		78B7AA331A415877002AAF7F /* SessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
 		78B7AA351A415C96002AAF7F /* PresenterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterTableViewCell.swift; sourceTree = "<group>"; };
 		78B978EE1A6737F1009DFB8B /* people.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = people.xcassets; sourceTree = "<group>"; };
-		78B978F41A67386A009DFB8B /* RWDevCon WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RWDevCon WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		78B978F71A67386A009DFB8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78B978F81A67386A009DFB8B /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
-		78B978FA1A67386A009DFB8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		78B978FE1A67386A009DFB8B /* RWDevCon WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RWDevCon WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		78B979041A67386A009DFB8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78B979061A67386A009DFB8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		78B979081A67386A009DFB8B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		78CBC28A1A6537F200FC839A /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		78CBC28C1A653A3F00FC839A /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 		78F256771A4162DA0040AC63 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -122,16 +67,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78B978F11A67386A009DFB8B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		781E29A31A797DC700D4A55C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				78B978EE1A6737F1009DFB8B /* people.xcassets */,
+				7848A62B1A41F776003F8373 /* Config.swift */,
+				78B7AA241A413573002AAF7F /* RWDevCon2015.plist */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		783F5A161A490E1B00199736 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,8 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				78B7A9D01A3E9876002AAF7F /* RWDevCon */,
-				78B978F51A67386A009DFB8B /* RWDevCon WatchKit Extension */,
-				78B979021A67386A009DFB8B /* RWDevCon WatchKit App */,
 				783F5A161A490E1B00199736 /* Frameworks */,
 				78B7A9CF1A3E9876002AAF7F /* Products */,
 			);
@@ -155,8 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				78B7A9CE1A3E9876002AAF7F /* RWDevCon.app */,
-				78B978F41A67386A009DFB8B /* RWDevCon WatchKit Extension.appex */,
-				78B978FE1A67386A009DFB8B /* RWDevCon WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -165,16 +109,14 @@
 			isa = PBXGroup;
 			children = (
 				78B7A9D31A3E9876002AAF7F /* AppDelegate.swift */,
-				7848A62B1A41F776003F8373 /* Config.swift */,
 				78CBC2891A6537DB00FC839A /* Schedule View */,
 				78F256881A416BC40040AC63 /* Session Details */,
 				78B7AA321A41561D002AAF7F /* Core Data */,
+				781E29A31A797DC700D4A55C /* Shared */,
 				78B7A9DA1A3E9876002AAF7F /* Main.storyboard */,
-				78B978EE1A6737F1009DFB8B /* people.xcassets */,
 				78B7A9DD1A3E9876002AAF7F /* Images.xcassets */,
 				78B7A9DF1A3E9876002AAF7F /* LaunchScreen.xib */,
 				78B7A9D11A3E9876002AAF7F /* Supporting Files */,
-				78B7AA241A413573002AAF7F /* RWDevCon2015.plist */,
 			);
 			path = RWDevCon;
 			sourceTree = "<group>";
@@ -190,50 +132,14 @@
 		78B7AA321A41561D002AAF7F /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
-				78B7AA261A4147DC002AAF7F /* CoreDataStack.swift */,
 				78B7A9D51A3E9876002AAF7F /* RWDevCon.xcdatamodeld */,
+				78B7AA261A4147DC002AAF7F /* CoreDataStack.swift */,
 				78B7AA2E1A414E58002AAF7F /* Person.swift */,
 				78B7AA2C1A414E57002AAF7F /* Session.swift */,
 				78B7AA2A1A414A94002AAF7F /* Room.swift */,
 				78B7AA281A414A94002AAF7F /* Track.swift */,
 			);
 			name = "Core Data";
-			sourceTree = "<group>";
-		};
-		78B978F51A67386A009DFB8B /* RWDevCon WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				78B978F81A67386A009DFB8B /* ScheduleInterfaceController.swift */,
-				78B978FA1A67386A009DFB8B /* Images.xcassets */,
-				78B978F61A67386A009DFB8B /* Supporting Files */,
-			);
-			path = "RWDevCon WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		78B978F61A67386A009DFB8B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				78B978F71A67386A009DFB8B /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		78B979021A67386A009DFB8B /* RWDevCon WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				78B979051A67386A009DFB8B /* Interface.storyboard */,
-				78B979081A67386A009DFB8B /* Images.xcassets */,
-				78B979031A67386A009DFB8B /* Supporting Files */,
-			);
-			path = "RWDevCon WatchKit App";
-			sourceTree = "<group>";
-		};
-		78B979031A67386A009DFB8B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				78B979041A67386A009DFB8B /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		78CBC2891A6537DB00FC839A /* Schedule View */ = {
@@ -269,50 +175,15 @@
 				78B7A9CA1A3E9876002AAF7F /* Sources */,
 				78B7A9CB1A3E9876002AAF7F /* Frameworks */,
 				78B7A9CC1A3E9876002AAF7F /* Resources */,
-				783F5A261A490E1B00199736 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				78B9790B1A67386A009DFB8B /* PBXTargetDependency */,
 			);
 			name = RWDevCon;
 			productName = RWDevCon;
 			productReference = 78B7A9CE1A3E9876002AAF7F /* RWDevCon.app */;
 			productType = "com.apple.product-type.application";
-		};
-		78B978F31A67386A009DFB8B /* RWDevCon WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 78B979101A67386A009DFB8B /* Build configuration list for PBXNativeTarget "RWDevCon WatchKit Extension" */;
-			buildPhases = (
-				78B978F01A67386A009DFB8B /* Sources */,
-				78B978F11A67386A009DFB8B /* Frameworks */,
-				78B978F21A67386A009DFB8B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				78B979011A67386A009DFB8B /* PBXTargetDependency */,
-			);
-			name = "RWDevCon WatchKit Extension";
-			productName = "RWDevCon WatchKit Extension";
-			productReference = 78B978F41A67386A009DFB8B /* RWDevCon WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit-extension";
-		};
-		78B978FD1A67386A009DFB8B /* RWDevCon WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 78B9790D1A67386A009DFB8B /* Build configuration list for PBXNativeTarget "RWDevCon WatchKit App" */;
-			buildPhases = (
-				78B978FC1A67386A009DFB8B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "RWDevCon WatchKit App";
-			productName = "RWDevCon WatchKit App";
-			productReference = 78B978FE1A67386A009DFB8B /* RWDevCon WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp";
 		};
 /* End PBXNativeTarget section */
 
@@ -331,12 +202,6 @@
 							};
 						};
 					};
-					78B978F31A67386A009DFB8B = {
-						CreatedOnToolsVersion = 6.2;
-					};
-					78B978FD1A67386A009DFB8B = {
-						CreatedOnToolsVersion = 6.2;
-					};
 				};
 			};
 			buildConfigurationList = 78B7A9C91A3E9876002AAF7F /* Build configuration list for PBXProject "RWDevCon" */;
@@ -353,8 +218,6 @@
 			projectRoot = "";
 			targets = (
 				78B7A9CD1A3E9876002AAF7F /* RWDevCon */,
-				78B978F31A67386A009DFB8B /* RWDevCon WatchKit Extension */,
-				78B978FD1A67386A009DFB8B /* RWDevCon WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -369,27 +232,6 @@
 				78B7A9DE1A3E9876002AAF7F /* Images.xcassets in Resources */,
 				78B978EF1A6737F1009DFB8B /* people.xcassets in Resources */,
 				78B7AA251A413573002AAF7F /* RWDevCon2015.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78B978F21A67386A009DFB8B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78632F911A67EA7C001958A5 /* RWDevCon2015.plist in Resources */,
-				78B978FF1A67386A009DFB8B /* RWDevCon WatchKit App.app in Resources */,
-				78B978FB1A67386A009DFB8B /* Images.xcassets in Resources */,
-				78B9791A1A673A24009DFB8B /* people.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78B978FC1A67386A009DFB8B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78B979071A67386A009DFB8B /* Interface.storyboard in Resources */,
-				78B979091A67386A009DFB8B /* Images.xcassets in Resources */,
-				78B9791B1A673A24009DFB8B /* people.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,35 +262,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78B978F01A67386A009DFB8B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78B979161A673A1A009DFB8B /* Session.swift in Sources */,
-				78B979141A673A1A009DFB8B /* CoreDataStack.swift in Sources */,
-				78B979171A673A1A009DFB8B /* Room.swift in Sources */,
-				78B978F91A67386A009DFB8B /* ScheduleInterfaceController.swift in Sources */,
-				78B979151A673A1A009DFB8B /* Person.swift in Sources */,
-				78B979191A673A20009DFB8B /* RWDevCon.xcdatamodeld in Sources */,
-				78B979131A673A12009DFB8B /* Config.swift in Sources */,
-				78B979181A673A1A009DFB8B /* Track.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		78B979011A67386A009DFB8B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 78B978FD1A67386A009DFB8B /* RWDevCon WatchKit App */;
-			targetProxy = 78B979001A67386A009DFB8B /* PBXContainerItemProxy */;
-		};
-		78B9790B1A67386A009DFB8B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 78B978F31A67386A009DFB8B /* RWDevCon WatchKit Extension */;
-			targetProxy = 78B9790A1A67386A009DFB8B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		78B7A9DA1A3E9876002AAF7F /* Main.storyboard */ = {
@@ -465,14 +279,6 @@
 				78B7A9E01A3E9876002AAF7F /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		78B979051A67386A009DFB8B /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				78B979061A67386A009DFB8B /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -570,7 +376,6 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RWDevCon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -587,81 +392,10 @@
 				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RWDevCon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		78B9790E1A67386A009DFB8B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				IBSC_MODULE = RWDevCon_WatchKit_Extension;
-				INFOPLIST_FILE = "RWDevCon WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Debug;
-		};
-		78B9790F1A67386A009DFB8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				COPY_PHASE_STRIP = NO;
-				IBSC_MODULE = RWDevCon_WatchKit_Extension;
-				INFOPLIST_FILE = "RWDevCon WatchKit App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
-			};
-			name = Release;
-		};
-		78B979111A67386A009DFB8B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_NOTICES = NO;
-				ASSETCATALOG_WARNINGS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "RWDevCon WatchKit Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		78B979121A67386A009DFB8B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_NOTICES = NO;
-				ASSETCATALOG_WARNINGS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = "RWDevCon WatchKit Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -682,24 +416,6 @@
 			buildConfigurations = (
 				78B7A9F11A3E9876002AAF7F /* Debug */,
 				78B7A9F21A3E9876002AAF7F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		78B9790D1A67386A009DFB8B /* Build configuration list for PBXNativeTarget "RWDevCon WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				78B9790E1A67386A009DFB8B /* Debug */,
-				78B9790F1A67386A009DFB8B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		78B979101A67386A009DFB8B /* Build configuration list for PBXNativeTarget "RWDevCon WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				78B979111A67386A009DFB8B /* Debug */,
-				78B979121A67386A009DFB8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
