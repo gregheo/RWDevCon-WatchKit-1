@@ -110,4 +110,23 @@ class Session: NSManagedObject {
     return sessionsForPredicate(predicate, context: context)
   }
 
+  class func nextFavoriteSession(context: NSManagedObjectContext) -> Session? {
+    let identifers = Config.favoriteSessions().values.array
+    if identifers.count > 0 {
+      let fetch = NSFetchRequest(entityName: "Session")
+      let sessionPredicate = NSPredicate(format: "identifier IN %@", argumentArray: [identifers])
+      let datePredicate = NSPredicate(format: "date >= %@", argumentArray: [NSDate()])
+      fetch.predicate = NSCompoundPredicate(type: NSCompoundPredicateType.AndPredicateType, subpredicates: [sessionPredicate, datePredicate])
+      fetch.sortDescriptors = [NSSortDescriptor(key: "date", ascending: true)]
+      if let results = context.executeFetchRequest(fetch, error: nil) {
+        if results.count > 0 {
+          if let session = results.first as? Session {
+            return session
+          }
+        }
+      }
+    }
+    return nil
+  }
+
 }
