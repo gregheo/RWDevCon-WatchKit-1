@@ -1,3 +1,10 @@
+//
+//  ScheduleTableViewCell.swift
+//  RWDevCon
+//
+//  Copyright (c) 2015 Razeware LLC. All rights reserved.
+//
+
 import Foundation
 import UIKit
 
