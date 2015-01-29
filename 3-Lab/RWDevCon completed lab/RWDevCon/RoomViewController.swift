@@ -1,3 +1,9 @@
+//
+//  ScheduleTableViewCell.swift
+//  RWDevCon
+//
+//  Copyright (c) 2015 Razeware LLC. All rights reserved.
+//
 
 import UIKit
 import AddressBook
