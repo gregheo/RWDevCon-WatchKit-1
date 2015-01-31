@@ -22,7 +22,7 @@ Select the top label. It should span the entire width of the screen and the text
 
 Also, change the font style to Headline and set the number of lines to 0 so it will show the complete title.
 
-What about that background color? There's no background color attribute for labels so you'll need to use a group, which does have a settable background. Add a group above the label, then drag the label inside the group. Change the group's background color to a nice dark green. The official RayWenderlich.com green is `#006D37` if you want to be precise!
+What about that background color? There's no background color attribute for labels so you'll need to use a group, which does have a settable color. Add a group above the label, then drag the label inside the group. Change the group's color attribute to a nice dark green. The official RayWenderlich.com green is `#006D37` if you want to be precise!
 
 ![Starter elements](assets/lab-label.png)
 
