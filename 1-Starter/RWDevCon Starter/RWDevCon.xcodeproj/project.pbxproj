@@ -73,9 +73,9 @@
 		781E29A31A797DC700D4A55C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				78B978EE1A6737F1009DFB8B /* shared.xcassets */,
 				7848A62B1A41F776003F8373 /* Config.swift */,
 				78B7AA241A413573002AAF7F /* RWDevCon2015.plist */,
+				78B978EE1A6737F1009DFB8B /* shared.xcassets */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
