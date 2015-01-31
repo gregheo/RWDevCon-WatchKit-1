@@ -5,7 +5,7 @@
 	<key>metadata</key>
 	<dict>
 		<key>lastUpdated</key>
-		<date>2015-01-26T23:45:00Z</date>
+		<date>2015-01-31T02:00:00Z</date>
 	</dict>
 	<key>sessions</key>
 	<dict>
@@ -937,12 +937,12 @@
 			<key>sessionNumber</key>
 			<string></string>
 			<key>title</key>
-			<string>Business</string>
+			<string>Identity I</string>
 			<key>sessionDescription</key>
-			<string>Gone are the days in which developing an app and putting it on the store was all we had to do. Nowadays coding is about 10% of the job. In this talk, we’ll discuss the remaining 90%.</string>
+			<string>We all have a concept of our own identity: as a developer, an artist, etc. But when our internal identity doesn’t match our external actions, we feel a lot of stress and negative feelings. In this talk, join Vicki in exploring how these identity conflicts affect our moods, through Vicki’s childhood growing up as an identical twin, to an adult with constantly shifting career paths.</string>
 			<key>presenters</key>
 			<array>
-				<string>funkyboy</string>
+				<string>vwenderlich</string>
 			</array>
 			<key>roomId</key>
 			<integer>3</integer>
@@ -1012,12 +1012,12 @@
 			<key>sessionNumber</key>
 			<string></string>
 			<key>title</key>
-			<string>Math Isn&apos;t Scary</string>
+			<string>Identity II</string>
 			<key>sessionDescription</key>
-			<string>Even the slightest mention of the word “Mathematics” makes many of us break out in hives. But mathematics is also what makes exciting new technologies possible: big data, machine intelligence, computer vision, robotics. Fortunately, the idea that math is hard and scary is a myth. In this talk, I will try to convince you that if you are able to learn programming, you’re also able to learn math — and enjoy it!</string>
+			<string>Are you really the developer you want to be? Or an impostor, pretending to be that? Or an impostor pretending not to be that? Has software, perhaps, destroyed you? This talk will tiptoe up to these questions, by reflecting on hero worship, Clojure’s model of time, teletransporters, and personal identity in a shifting world.</string>
 			<key>presenters</key>
 			<array>
-				<string>matthijs</string>
+				<string>alexisgallagher</string>
 			</array>
 			<key>roomId</key>
 			<integer>3</integer>
@@ -1037,12 +1037,12 @@
 			<key>sessionNumber</key>
 			<string></string>
 			<key>title</key>
-			<string>raywenderlich.com Folklore</string>
+			<string>Business</string>
 			<key>sessionDescription</key>
-			<string>I often get asked at iOS conferences and meetups “What’s it like to write for raywenderlich.com?”, “Have you ever met Ray - what’s he like?”, or “How did the team grow over the years?” If you’re curious about the answers to these and more - this session is for you! Take a break from the intensive tutorials in the conference, and enjoy some amusing inside stories about the team and Ray himself.</string>
+			<string>Gone are the days in which developing an app and putting it on the store was all we had to do. Nowadays coding is about 10% of the job. In this talk, we’ll discuss the remaining 90%.</string>
 			<key>presenters</key>
 			<array>
-				<string>icanzilb</string>
+				<string>funkyboy</string>
 			</array>
 			<key>roomId</key>
 			<integer>1</integer>
@@ -1062,12 +1062,12 @@
 			<key>sessionNumber</key>
 			<string></string>
 			<key>title</key>
-			<string>Identity I</string>
+			<string>Devsign</string>
 			<key>sessionDescription</key>
-			<string>We all have a concept of our own identity: as a developer, an artist, etc. But when our internal identity doesn’t match our external actions, we feel a lot of stress and negative feelings. In this talk, join Vicki in exploring how these identity conflicts affect our moods, through Vicki’s childhood growing up as an identical twin, to an adult with constantly shifting career paths.</string>
+			<string>Design and development are inseparable. At their core they both aim to make things work really well. As developers, we should embrace a design-centric mindset and learn how to approach several design stages to make our apps work even better. In this talk, learn the fundamental credo of design as we explore topics such as Product, Interaction, Visual, and UX design.</string>
 			<key>presenters</key>
 			<array>
-				<string>vwenderlich</string>
+				<string>rcepeda</string>
 			</array>
 			<key>roomId</key>
 			<integer>2</integer>
@@ -1087,12 +1087,12 @@
 			<key>sessionNumber</key>
 			<string></string>
 			<key>title</key>
-			<string>Devsign</string>
+			<string>raywenderlich.com Folklore</string>
 			<key>sessionDescription</key>
-			<string>Design and development are inseparable. At their core they both aim to make things work really well. As developers, we should embrace a design-centric mindset and learn how to approach several design stages to make our apps work even better. In this talk, learn the fundamental credo of design as we explore topics such as Product, Interaction, Visual, and UX design.</string>
+			<string>I often get asked at iOS conferences and meetups “What’s it like to write for raywenderlich.com?”, “Have you ever met Ray - what’s he like?”, or “How did the team grow over the years?” If you’re curious about the answers to these and more - this session is for you! Take a break from the intensive tutorials in the conference, and enjoy some amusing inside stories about the team and Ray himself.</string>
 			<key>presenters</key>
 			<array>
-				<string>rcepeda</string>
+				<string>icanzilb</string>
 			</array>
 			<key>roomId</key>
 			<integer>3</integer>
@@ -1112,12 +1112,12 @@
 			<key>sessionNumber</key>
 			<string></string>
 			<key>title</key>
-			<string>NSBrief</string>
+			<string>Math Isn&apos;t Scary</string>
 			<key>sessionDescription</key>
-			<string>NSBrief has grown over the years to be one of the most well respected iOS &amp; Mac Developer podcasts available on the interwebs. With a wide range of topics and guests, NSBrief has been a project that has opened doors I’d never imagined. Let’s take a walk down memory lane, see lessons learned, and also look forward to see what’s ahead for one of the older Cocoa podcasts out there.</string>
+			<string>Even the slightest mention of the word “Mathematics” makes many of us break out in hives. But mathematics is also what makes exciting new technologies possible: big data, machine intelligence, computer vision, robotics. Fortunately, the idea that math is hard and scary is a myth. In this talk, I will try to convince you that if you are able to learn programming, you’re also able to learn math — and enjoy it!</string>
 			<key>presenters</key>
 			<array>
-				<string>saulmora</string>
+				<string>matthijs</string>
 			</array>
 			<key>roomId</key>
 			<integer>1</integer>
@@ -1137,12 +1137,12 @@
 			<key>sessionNumber</key>
 			<string></string>
 			<key>title</key>
-			<string>Identity II</string>
+			<string>Cognition</string>
 			<key>sessionDescription</key>
-			<string>Are you really the developer you want to be? Or an impostor, pretending to be that? Or an impostor pretending not to be that? Has software, perhaps, destroyed you? This talk will tiptoe up to these questions, by reflecting on hero worship, Clojure’s model of time, teletransporters, and personal identity in a shifting world.</string>
+			<string>We are all different and we perceive/think it many different ways. And yet there are many universal patterns when it comes to use our cognition. In this talk, learn how to exploit these universal patterns to create well designed applications.</string>
 			<key>presenters</key>
 			<array>
-				<string>alexisgallagher</string>
+				<string>funkyboy</string>
 			</array>
 			<key>roomId</key>
 			<integer>2</integer>
@@ -1162,12 +1162,12 @@
 			<key>sessionNumber</key>
 			<string></string>
 			<key>title</key>
-			<string>Cognition</string>
+			<string>NSBrief</string>
 			<key>sessionDescription</key>
-			<string>We are all different and we perceive/think it many different ways. And yet there are many universal patterns when it comes to use our cognition. In this talk, learn how to exploit these universal patterns to create well designed applications.</string>
+			<string>NSBrief has grown over the years to be one of the most well respected iOS &amp; Mac Developer podcasts available on the interwebs. With a wide range of topics and guests, NSBrief has been a project that has opened doors I’d never imagined. Let’s take a walk down memory lane, see lessons learned, and also look forward to see what’s ahead for one of the older Cocoa podcasts out there.</string>
 			<key>presenters</key>
 			<array>
-				<string>funkyboy</string>
+				<string>saulmora</string>
 			</array>
 			<key>roomId</key>
 			<integer>3</integer>
@@ -1225,7 +1225,7 @@
 			<key>twitter</key>
 			<string></string>
 			<key>bio</key>
-			<string>Fosco works at Facebook on all things Parse, and some PHP too.</string>
+			<string>Fosco has worked in IT and software development for almost 2 decades, across nearly every industry. In 2013 he moved to San Francisco to join the Parse team, which was later acquired by Facebook. While helping thousands of developers use Parse, he has also released open­source projects including both the Parse and Facebook PHP SDKs.</string>
 		</dict>
 		<key>gregheo</key>
 		<dict>
@@ -1292,7 +1292,7 @@ Besides crafting code, Marin also enjoys bloging, writing books, teaching and tr
 			<key>last</key>
 			<string>Gallagher</string>
 			<key>twitter</key>
-			<string></string>
+			<string>alexisgallagher</string>
 			<key>bio</key>
 			<string>Alexis Gallagher has been failing to tear himself away from computers for over a dozen years, including tours in e-commerce firms in New York, in scientific research in Oxford, in front-office trading systems in London, and now via iOS in a pocket or corporate briefing room near you. After years breathing the thin airs of abstraction, he is a sucker for beauty and loves how iOS lets you work on ideas you can touch.</string>
 		</dict>
@@ -1305,7 +1305,7 @@ Besides crafting code, Marin also enjoys bloging, writing books, teaching and tr
 			<key>last</key>
 			<string>Pedersen</string>
 			<key>twitter</key>
-			<string></string>
+			<string>twofly3</string>
 			<key>bio</key>
 			<string>When Kim is not working on developing the next treatment for diabetes at a large pharmaceutical company he is spending his spare time developing games for iOS. He started programming on his C64 at the age of 8, and has since then been creating games on Amiga, PC and XBox360. He never thought he would ditch his beloved Windows PC for a Mac - but that changed three years ago and he has since then been dedicated to developing the next big iOS mobile indie hit.</string>
 		</dict>
@@ -1331,7 +1331,7 @@ Besides crafting code, Marin also enjoys bloging, writing books, teaching and tr
 			<key>last</key>
 			<string>Hollemans</string>
 			<key>twitter</key>
-			<string></string>
+			<string>mhollemans</string>
 			<key>bio</key>
 			<string>Matthijs Hollemans is an independent iOS developer and designer who lives to create awesome software. His focus is on iPad apps because he thinks tablets are way cooler than phones. Whenever he is not glued to his screen, Matthijs plays the piano, is into healthy and natural living, and goes out barefoot running.</string>
 		</dict>
@@ -1370,7 +1370,7 @@ Besides crafting code, Marin also enjoys bloging, writing books, teaching and tr
 			<key>last</key>
 			<string>Turton</string>
 			<key>twitter</key>
-			<string></string>
+			<string>richturton</string>
 			<key>bio</key>
 			<string>Richard is an iOS developer for a leading UK mobile agency, prolific Stack Overflow participant and author of a development blog, Command Shift. When he&apos;s not in front of a computer he is usually building Lego horse powered spaceships (don&apos;t ask!) with his daughter.</string>
 		</dict>
